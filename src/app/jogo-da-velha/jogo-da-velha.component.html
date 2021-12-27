@@ -2,7 +2,7 @@
 
     <div class="container-fluid mt-5 ">
       <h2>Jogo da velha</h2>
-    
+      <h3 *ngIf="width <=400">Seu dispositivo é muito pequeno, vire a tela horizontalmente!!</h3>
       <!-- tela inicial -->
       <div class="principal mt-5" *ngIf="showInicio">
         <div class="col-12">

@@ -51,7 +51,6 @@ export class JogoDaVelhaComponent implements OnInit {
   iniciarJogo():void{
     this.width = this.tamanhoTela;
     if(this.width <= 400){
-      alert("Seu Dispositivo é muito pequeno. Por faver vire-o horizontalmente!!");
       this.iniciarJogo();
     }else{
       this.jogoDaVelhaService.iniciarJogo(this.players);
